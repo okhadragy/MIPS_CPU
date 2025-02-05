@@ -1,0 +1,45 @@
+ISim log file
+Running: C:\Projects\Phase1\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Projects/Phase1/testbench_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 100 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/myimem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 11 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 11 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 11 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 11 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 11 ns(10), Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 15 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 15 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 15 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 15 ns(10), Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 23 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 23 ns(5), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 23 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 23 ns(6), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 23 ns(10), Instance /testbench/dut/mydmem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 31 ns(1): Note: Test Successful (/testbench/).
+at 31 ns(7), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 31 ns(7), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 31 ns(8), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 31 ns(8), Instance /testbench/dut/mymips/mydatapath/myalu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+ERROR: Index -32 out of bound 63 downto 0. 
+ERROR: In process imem.vhd:18 
+ 
+INFO: Simulator is stopped.

@@ -1,0 +1,944 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Projects\Phase1\mypackage.vhd" into library work
+Parsing package <mypackage>.
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\mypackage.vhd" Line 194. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\mypackage.vhd" Line 201. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing VHDL file "C:\Projects\Phase1\Mux.vhd" into library work
+Parsing entity <Mux>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\Projects\Phase1\FlopRs.vhd" into library work
+Parsing entity <flopr>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "C:\Projects\Phase1\Decoder.vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "C:\Projects\Phase1\Sign_extension.vhd" into library work
+Parsing entity <Sign_extension>.
+Parsing architecture <Behavioral> of entity <sign_extension>.
+Parsing VHDL file "C:\Projects\Phase1\Shifter.vhd" into library work
+Parsing entity <Shifter>.
+Parsing architecture <Behavioral> of entity <shifter>.
+Parsing VHDL file "C:\Projects\Phase1\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 138: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 139: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 140: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 141: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 142: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 143: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 144: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 145: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 146: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 147: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 148: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 149: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 150: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 151: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 152: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 153: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 154: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 155: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 156: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 157: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 158: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 159: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 160: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 161: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 162: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 163: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 164: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 165: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 166: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 167: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 168: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 169: Actual for formal port regwrite is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Projects\Phase1\MUX2x1.vhd" into library work
+Parsing entity <Mux2x1>.
+Parsing architecture <Behavioral> of entity <mux2x1>.
+Parsing VHDL file "C:\Projects\Phase1\maindecoder.vhd" into library work
+Parsing entity <MAINDECODER>.
+Parsing architecture <Behavioral> of entity <maindecoder>.
+Parsing VHDL file "C:\Projects\Phase1\alucontrol.vhd" into library work
+Parsing entity <alucontrol2>.
+Parsing architecture <Behavioral> of entity <alucontrol2>.
+Parsing VHDL file "C:\Projects\Phase1\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Projects\Phase1\Adder.vhd" into library work
+Parsing entity <Adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\Projects\Phase1\Datapath.vhd" into library work
+Parsing entity <Datapath>.
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\Datapath.vhd" Line 31. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\Datapath.vhd" Line 38. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <Behavioral> of entity <datapath>.
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\Datapath.vhd" Line 80: Formal port data2 of mode out cannot be associated with actual port writedata of mode buffer
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\Datapath.vhd" Line 94: Formal port dataout of mode out cannot be associated with actual port aluout of mode buffer
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\Datapath.vhd" Line 104: Formal port q of mode out cannot be associated with actual port pc of mode buffer
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\Datapath.vhd" Line 110: Actual for formal port s is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Projects\Phase1\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+Parsing VHDL file "C:\Projects\Phase1\MIPS.vhd" into library work
+Parsing entity <MIPS>.
+Parsing architecture <Behavioral> of entity <mips>.
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 59: Formal port pc of mode buffer cannot be associated with actual port pc of mode out
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 66: Formal port aluout of mode buffer cannot be associated with actual port aluout of mode out
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 67: Formal port writedata of mode buffer cannot be associated with actual port writedata of mode out
+Parsing VHDL file "C:\Projects\Phase1\imem.vhd" into library work
+Parsing entity <imem>.
+Parsing architecture <Behavioral> of entity <imem>.
+Parsing VHDL file "C:\Projects\Phase1\dmem.vhd" into library work
+Parsing entity <dmem>.
+Parsing architecture <Behavioral> of entity <dmem>.
+Parsing VHDL file "C:\Projects\Phase1\top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <MIPS> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Datapath> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Mux2x1> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Decoder> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <flopr> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\FlopRs.vhd" Line 50: regwrite should be on the sensitivity list of the process
+
+Elaborating entity <Mux> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Sign_extension> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Mux2x1> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Adder> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Shifter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Shifter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MAINDECODER> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 51: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 52: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 53: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 54: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 55: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 56: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 57: controls should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Projects\Phase1\maindecoder.vhd" Line 58: controls should be on the sensitivity list of the process
+
+Elaborating entity <alucontrol2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <imem> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <dmem> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Projects\Phase1\top.vhd".
+        n = 32
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <MIPS>.
+    Related source file is "C:\Projects\Phase1\MIPS.vhd".
+        n = 32
+    Summary:
+	no macro.
+Unit <MIPS> synthesized.
+
+Synthesizing Unit <Datapath>.
+    Related source file is "C:\Projects\Phase1\Datapath.vhd".
+        n = 32
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Datapath> synthesized.
+
+Synthesizing Unit <Mux2x1_1>.
+    Related source file is "C:\Projects\Phase1\MUX2x1.vhd".
+        n = 5
+    Found 1-bit tristate buffer for signal <O<4>> created at line 43
+    Found 1-bit tristate buffer for signal <O<3>> created at line 43
+    Found 1-bit tristate buffer for signal <O<2>> created at line 43
+    Found 1-bit tristate buffer for signal <O<1>> created at line 43
+    Found 1-bit tristate buffer for signal <O<0>> created at line 43
+    Summary:
+	inferred   5 Multiplexer(s).
+	inferred   5 Tristate(s).
+Unit <Mux2x1_1> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\Projects\Phase1\RegisterFile.vhd".
+        n = 32
+    Summary:
+	no macro.
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <Decoder>.
+    Related source file is "C:\Projects\Phase1\Decoder.vhd".
+        n = 5
+    Summary:
+	no macro.
+Unit <Decoder> synthesized.
+
+Synthesizing Unit <flopr>.
+    Related source file is "C:\Projects\Phase1\FlopRs.vhd".
+        n = 32
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+Synthesizing Unit <Mux>.
+    Related source file is "C:\Projects\Phase1\Mux.vhd".
+        n = 32
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[31]_MUX_79_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[30]_MUX_111_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[29]_MUX_143_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[28]_MUX_175_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[27]_MUX_207_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[26]_MUX_239_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[25]_MUX_271_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[24]_MUX_303_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[23]_MUX_335_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[22]_MUX_367_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[21]_MUX_399_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[20]_MUX_431_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[19]_MUX_463_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[18]_MUX_495_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[17]_MUX_527_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[16]_MUX_559_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[15]_MUX_591_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[14]_MUX_623_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[13]_MUX_655_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[12]_MUX_687_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[11]_MUX_719_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[10]_MUX_751_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[9]_MUX_783_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[8]_MUX_815_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[7]_MUX_847_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[6]_MUX_879_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[5]_MUX_911_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[4]_MUX_943_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[3]_MUX_975_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[2]_MUX_1007_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[1]_MUX_1039_o> created at line 74.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_12_o_I0[0]_MUX_1071_o> created at line 74.
+    Found 1-bit tristate buffer for signal <muxDataOut<31>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<30>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<29>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<28>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<27>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<26>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<25>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<24>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<23>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<22>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<21>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<20>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<19>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<18>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<17>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<16>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<15>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<14>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<13>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<12>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<11>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<10>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<9>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<8>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<7>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<6>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<5>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<4>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<3>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<2>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<1>> created at line 74
+    Found 1-bit tristate buffer for signal <muxDataOut<0>> created at line 74
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <Mux> synthesized.
+
+Synthesizing Unit <Sign_extension>.
+    Related source file is "C:\Projects\Phase1\Sign_extension.vhd".
+        i_n = 16
+        o_n = 32
+    Summary:
+	no macro.
+Unit <Sign_extension> synthesized.
+
+Synthesizing Unit <Mux2x1_2>.
+    Related source file is "C:\Projects\Phase1\MUX2x1.vhd".
+        n = 32
+    Found 1-bit tristate buffer for signal <O<31>> created at line 43
+    Found 1-bit tristate buffer for signal <O<30>> created at line 43
+    Found 1-bit tristate buffer for signal <O<29>> created at line 43
+    Found 1-bit tristate buffer for signal <O<28>> created at line 43
+    Found 1-bit tristate buffer for signal <O<27>> created at line 43
+    Found 1-bit tristate buffer for signal <O<26>> created at line 43
+    Found 1-bit tristate buffer for signal <O<25>> created at line 43
+    Found 1-bit tristate buffer for signal <O<24>> created at line 43
+    Found 1-bit tristate buffer for signal <O<23>> created at line 43
+    Found 1-bit tristate buffer for signal <O<22>> created at line 43
+    Found 1-bit tristate buffer for signal <O<21>> created at line 43
+    Found 1-bit tristate buffer for signal <O<20>> created at line 43
+    Found 1-bit tristate buffer for signal <O<19>> created at line 43
+    Found 1-bit tristate buffer for signal <O<18>> created at line 43
+    Found 1-bit tristate buffer for signal <O<17>> created at line 43
+    Found 1-bit tristate buffer for signal <O<16>> created at line 43
+    Found 1-bit tristate buffer for signal <O<15>> created at line 43
+    Found 1-bit tristate buffer for signal <O<14>> created at line 43
+    Found 1-bit tristate buffer for signal <O<13>> created at line 43
+    Found 1-bit tristate buffer for signal <O<12>> created at line 43
+    Found 1-bit tristate buffer for signal <O<11>> created at line 43
+    Found 1-bit tristate buffer for signal <O<10>> created at line 43
+    Found 1-bit tristate buffer for signal <O<9>> created at line 43
+    Found 1-bit tristate buffer for signal <O<8>> created at line 43
+    Found 1-bit tristate buffer for signal <O<7>> created at line 43
+    Found 1-bit tristate buffer for signal <O<6>> created at line 43
+    Found 1-bit tristate buffer for signal <O<5>> created at line 43
+    Found 1-bit tristate buffer for signal <O<4>> created at line 43
+    Found 1-bit tristate buffer for signal <O<3>> created at line 43
+    Found 1-bit tristate buffer for signal <O<2>> created at line 43
+    Found 1-bit tristate buffer for signal <O<1>> created at line 43
+    Found 1-bit tristate buffer for signal <O<0>> created at line 43
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <Mux2x1_2> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Projects\Phase1\ALU.vhd".
+        n = 32
+    Found 32-bit adder for signal <_n0207> created at line 38.
+    Found 32-bit adder for signal <_n0208> created at line 38.
+    Found 32-bit adder for signal <sum> created at line 38.
+    Found 32-bit 4-to-1 multiplexer for signal <dataout> created at line 29.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:\Projects\Phase1\Adder.vhd".
+        n = 32
+    Found 32-bit adder for signal <O> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+Synthesizing Unit <Shifter_1>.
+    Related source file is "C:\Projects\Phase1\Shifter.vhd".
+        i_n = 26
+        o_n = 28
+        shift_n = 2
+    Summary:
+	no macro.
+Unit <Shifter_1> synthesized.
+
+Synthesizing Unit <Shifter_2>.
+    Related source file is "C:\Projects\Phase1\Shifter.vhd".
+        i_n = 32
+        o_n = 32
+        shift_n = 2
+WARNING:Xst:647 - Input <I<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Shifter_2> synthesized.
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:\Projects\Phase1\Controller.vhd".
+WARNING:Xst:647 - Input <zero> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Controller> synthesized.
+
+Synthesizing Unit <MAINDECODER>.
+    Related source file is "C:\Projects\Phase1\maindecoder.vhd".
+    Summary:
+	no macro.
+Unit <MAINDECODER> synthesized.
+
+Synthesizing Unit <alucontrol2>.
+    Related source file is "C:\Projects\Phase1\alucontrol.vhd".
+    Summary:
+	no macro.
+Unit <alucontrol2> synthesized.
+
+Synthesizing Unit <imem>.
+    Related source file is "C:\Projects\Phase1\imem.vhd".
+    Found 64x32-bit Read Only RAM for signal <rd>
+    Summary:
+	inferred   1 RAM(s).
+Unit <imem> synthesized.
+
+Synthesizing Unit <dmem>.
+    Related source file is "C:\Projects\Phase1\dmem.vhd".
+WARNING:Xst:647 - Input <a<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <a<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x32-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <dmem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 64x32-bit single-port RAM                             : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 5
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Multiplexers                                         : 201
+ 1-bit 2-to-1 multiplexer                              : 133
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 2-to-1 multiplexer                             : 3
+ 32-bit 4-to-1 multiplexer                             : 1
+# Tristates                                            : 197
+ 1-bit tristate buffer                                 : 197
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <q_31> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_30> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_29> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_28> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_27> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_26> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_25> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_24> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_23> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_22> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_21> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_20> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_19> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_18> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_17> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_16> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_15> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_14> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_13> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_12> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_11> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_10> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_9> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_8> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_7> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_6> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_5> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_4> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_3> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_2> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_1> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <zero>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <dmem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <wd>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <dmem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <imem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rd> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rd>            |          |
+    -----------------------------------------------------------------------
+Unit <imem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 64x32-bit single-port distributed RAM                 : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit adder carry in                                 : 1
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Multiplexers                                         : 201
+ 1-bit 2-to-1 multiplexer                              : 133
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 2-to-1 multiplexer                             : 3
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit top: 64 internal tristates are replaced by logic (pull-up yes): N10, N11, N12, N13, N14, N15, N16, N17, N18, N19, N2, N20, N21, N22, N23, N24, N25, N26, N27, N28, N29, N3, N30, N31, N32, N33, N4, N5, N6, N7, N8, N9, mymips/mydatapath/data_1<0>, mymips/mydatapath/data_1<10>, mymips/mydatapath/data_1<11>, mymips/mydatapath/data_1<12>, mymips/mydatapath/data_1<13>, mymips/mydatapath/data_1<14>, mymips/mydatapath/data_1<15>, mymips/mydatapath/data_1<16>, mymips/mydatapath/data_1<17>, mymips/mydatapath/data_1<18>, mymips/mydatapath/data_1<19>, mymips/mydatapath/data_1<1>, mymips/mydatapath/data_1<20>, mymips/mydatapath/data_1<21>, mymips/mydatapath/data_1<22>, mymips/mydatapath/data_1<23>, mymips/mydatapath/data_1<24>, mymips/mydatapath/data_1<25>, mymips/mydatapath/data_1<26>, mymips/mydatapath/data_1<27>, mymips/mydatapath/data_1<28>, mymips/mydatapath/data_1<29>, mymips/mydatapath/data_1<2>, mymips/mydatapath/data_1<30>, mymips/mydatapath/data_1<31>, mymips/mydatapath/data_1<3>, mymips/mydatapath/data_1<4>, mymips/mydatapath/data_1<5>, mymips/mydatapath/data_1<6>, mymips/mydatapath/data_1<7>, mymips/mydatapath/data_1<8>, mymips/mydatapath/data_1<9>.
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1710 - FF/Latch <mymips/mydatapath/myregisterfile/zero/q_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_16> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_17> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_18> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_19> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mymips/mydatapath/myregisterfile/zero/q_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mymips/mydatapath/pc1/q_0> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 998
+ Flip-Flops                                            : 998
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1028
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 32
+#      LUT3                        : 35
+#      LUT4                        : 21
+#      LUT5                        : 100
+#      LUT6                        : 695
+#      MUXCY                       : 36
+#      MUXF7                       : 64
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 998
+#      FD_1                        : 6
+#      FDCE_1                      : 992
+# RAMS                             : 32
+#      RAM64X1S                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 66
+#      IBUF                        : 1
+#      OBUF                        : 65
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             998  out of  126800     0%  
+ Number of Slice LUTs:                  920  out of  63400     1%  
+    Number used as Logic:               888  out of  63400     1%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1870
+   Number with an unused Flip Flop:     872  out of   1870    46%  
+   Number with an unused LUT:           950  out of   1870    50%  
+   Number of fully used LUT-FF pairs:    48  out of   1870     2%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                          67
+ Number of bonded IOBs:                  67  out of    210    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1030  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 11.466ns (Maximum Frequency: 87.218MHz)
+   Minimum input arrival time before clock: 0.823ns
+   Maximum output required time after clock: 6.489ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.466ns (frequency: 87.218MHz)
+  Total number of paths / destination ports: 56853829 / 2246
+-------------------------------------------------------------------------
+Delay:               5.733ns (Levels of Logic = 14)
+  Source:            mymips/mydatapath/pc1/q_7 (FF)
+  Destination:       mydmem/Mram_mem1 (RAM)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: mymips/mydatapath/pc1/q_7 to mydmem/Mram_mem1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            20   0.364   0.781  mymips/mydatapath/pc1/q_7 (mymips/mydatapath/pc1/q_7)
+     LUT6:I0->O          263   0.097   0.521  myimem/Mram_rd171 (instr<17>)
+     LUT6:I4->O            1   0.097   0.556  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[1]_MUX_1039_o_81 (mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[1]_MUX_1039_o_81)
+     LUT6:I2->O            1   0.097   0.000  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[1]_MUX_1039_o_3 (mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[1]_MUX_1039_o_3)
+     MUXF7:I1->O           3   0.279   0.305  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[1]_MUX_1039_o_2_f7 (writedata_1_OBUF)
+     LUT6:I5->O            3   0.097   0.305  mymips/mydatapath/myalu/Mmux_data_2121 (mymips/mydatapath/myalu/data_2<1>)
+     LUT2:I1->O            1   0.097   0.295  mymips/mydatapath/myalu/Madd_sum1 (mymips/mydatapath/myalu/Madd_sum1)
+     LUT3:I2->O            1   0.097   0.000  mymips/mydatapath/myalu/Madd_sum_lut<0>2 (mymips/mydatapath/myalu/Madd_sum_lut<0>2)
+     MUXCY:S->O            1   0.353   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_1 (mymips/mydatapath/myalu/Madd_sum_cy<0>2)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_2 (mymips/mydatapath/myalu/Madd_sum_cy<0>3)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_3 (mymips/mydatapath/myalu/Madd_sum_cy<0>4)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_4 (mymips/mydatapath/myalu/Madd_sum_cy<0>5)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_5 (mymips/mydatapath/myalu/Madd_sum_cy<0>6)
+     XORCY:CI->O           1   0.370   0.295  mymips/mydatapath/myalu/Madd_sum_xor<0>_6 (mymips/mydatapath/myalu/sum<7>)
+     LUT6:I5->O           34   0.097   0.386  mymips/mydatapath/myalu/Mmux_dataout301 (dataadr_7_OBUF)
+     RAM64X1S:A5               0.150          mydmem/Mram_mem1
+    ----------------------------------------
+    Total                      5.733ns (2.287ns logic, 3.446ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 992 / 992
+-------------------------------------------------------------------------
+Offset:              0.823ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       mymips/mydatapath/myregisterfile/at/q_31 (FF)
+  Destination Clock: clk falling
+
+  Data Path: reset to mymips/mydatapath/myregisterfile/at/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           992   0.001   0.473  reset_IBUF (reset_IBUF)
+     FDCE_1:CLR                0.349          mymips/mydatapath/myregisterfile/at/q_0
+    ----------------------------------------
+    Total                      0.823ns (0.350ns logic, 0.473ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 658778 / 65
+-------------------------------------------------------------------------
+Offset:              6.489ns (Levels of Logic = 32)
+  Source:            mymips/mydatapath/pc1/q_7 (FF)
+  Destination:       dataadr<0> (PAD)
+  Source Clock:      clk falling
+
+  Data Path: mymips/mydatapath/pc1/q_7 to dataadr<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            20   0.364   0.781  mymips/mydatapath/pc1/q_7 (mymips/mydatapath/pc1/q_7)
+     LUT6:I0->O          263   0.097   0.835  myimem/Mram_rd171 (instr<17>)
+     LUT6:I0->O            1   0.097   0.556  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[8]_MUX_815_o_81 (mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[8]_MUX_815_o_81)
+     LUT6:I2->O            1   0.097   0.000  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[8]_MUX_815_o_3 (mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[8]_MUX_815_o_3)
+     MUXF7:I1->O           3   0.279   0.521  mymips/mydatapath/myregisterfile/mux2/Mmux_Z_12_o_I0[8]_MUX_815_o_2_f7 (writedata_8_OBUF)
+     LUT6:I3->O            3   0.097   0.305  mymips/mydatapath/myalu/Mmux_data_2311 (mymips/mydatapath/myalu/data_2<8>)
+     LUT2:I1->O            1   0.097   0.295  mymips/mydatapath/myalu/Madd_sum8 (mymips/mydatapath/myalu/Madd_sum8)
+     LUT3:I2->O            1   0.097   0.000  mymips/mydatapath/myalu/Madd_sum_lut<0>9 (mymips/mydatapath/myalu/Madd_sum_lut<0>9)
+     MUXCY:S->O            1   0.353   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_8 (mymips/mydatapath/myalu/Madd_sum_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_9 (mymips/mydatapath/myalu/Madd_sum_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_10 (mymips/mydatapath/myalu/Madd_sum_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_11 (mymips/mydatapath/myalu/Madd_sum_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_12 (mymips/mydatapath/myalu/Madd_sum_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_13 (mymips/mydatapath/myalu/Madd_sum_cy<0>14)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_14 (mymips/mydatapath/myalu/Madd_sum_cy<0>15)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_15 (mymips/mydatapath/myalu/Madd_sum_cy<0>16)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_16 (mymips/mydatapath/myalu/Madd_sum_cy<0>17)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_17 (mymips/mydatapath/myalu/Madd_sum_cy<0>18)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_18 (mymips/mydatapath/myalu/Madd_sum_cy<0>19)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_19 (mymips/mydatapath/myalu/Madd_sum_cy<0>20)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_20 (mymips/mydatapath/myalu/Madd_sum_cy<0>21)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_21 (mymips/mydatapath/myalu/Madd_sum_cy<0>22)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_22 (mymips/mydatapath/myalu/Madd_sum_cy<0>23)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_23 (mymips/mydatapath/myalu/Madd_sum_cy<0>24)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_24 (mymips/mydatapath/myalu/Madd_sum_cy<0>25)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_25 (mymips/mydatapath/myalu/Madd_sum_cy<0>26)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_26 (mymips/mydatapath/myalu/Madd_sum_cy<0>27)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_27 (mymips/mydatapath/myalu/Madd_sum_cy<0>28)
+     MUXCY:CI->O           1   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_28 (mymips/mydatapath/myalu/Madd_sum_cy<0>29)
+     MUXCY:CI->O           0   0.023   0.000  mymips/mydatapath/myalu/Madd_sum_cy<0>_29 (mymips/mydatapath/myalu/Madd_sum_cy<0>30)
+     XORCY:CI->O           2   0.370   0.383  mymips/mydatapath/myalu/Madd_sum_xor<0>_30 (mymips/mydatapath/myalu/sum<31>)
+     LUT6:I4->O            2   0.097   0.283  mymips/mydatapath/myalu/Mmux_dataout110 (dataadr_0_OBUF)
+     OBUF:I->O                 0.000          dataadr_0_OBUF (dataadr<0>)
+    ----------------------------------------
+    Total                      6.489ns (2.528ns logic, 3.961ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |    5.733|    6.610|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.20 secs
+ 
+--> 
+
+Total memory usage is 573756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  144 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

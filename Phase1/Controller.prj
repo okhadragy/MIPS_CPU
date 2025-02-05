@@ -1,0 +1,4 @@
+vhdl work "mypackage.vhd"
+vhdl work "maindecoder.vhd"
+vhdl work "alucontrol.vhd"
+vhdl work "Controller.vhd"

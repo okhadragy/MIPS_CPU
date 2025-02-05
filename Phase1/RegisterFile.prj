@@ -1,0 +1,5 @@
+vhdl work "mypackage.vhd"
+vhdl work "//LAPTOP-68C2HGIQ/projects/RegisterFile/Mux.vhd"
+vhdl work "//LAPTOP-68C2HGIQ/projects/RegisterFile/FlopRs.vhd"
+vhdl work "//LAPTOP-68C2HGIQ/projects/RegisterFile/Decoder.vhd"
+vhdl work "RegisterFile.vhd"

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Projects/Phase1/imem.xst" -ofn "C:/Projects/Phase1/imem.syr" 
+xst -intstyle ise -ifn "C:/Projects/Phase1/imem.xst" -ofn "C:/Projects/Phase1/imem.syr" 
+xst -intstyle ise -ifn "C:/Projects/Phase1/imem.xst" -ofn "C:/Projects/Phase1/imem.syr" 
+xst -intstyle ise -ifn "C:/Projects/Phase1/imem.xst" -ofn "C:/Projects/Phase1/imem.syr" 
+xst -intstyle ise -ifn "C:/Projects/Phase1/imem.xst" -ofn "C:/Projects/Phase1/imem.syr" 

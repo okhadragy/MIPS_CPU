@@ -1,0 +1,5 @@
+vhdl isim_temp "mypackage.vhd"
+vhdl isim_temp "Mux.vhd"
+vhdl isim_temp "FlopRs.vhd"
+vhdl isim_temp "Decoder.vhd"
+vhdl isim_temp "RegisterFile.vhd"

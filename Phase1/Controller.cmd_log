@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Projects/Phase1/Controller.xst" -ofn "C:/Projects/Phase1/Controller.syr" 
+xst -intstyle ise -ifn "C:/Projects/Phase1/Controller.xst" -ofn "C:/Projects/Phase1/Controller.syr" 

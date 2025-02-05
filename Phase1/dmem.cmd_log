@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Projects/Phase1/dmem.xst" -ofn "C:/Projects/Phase1/dmem.syr" 

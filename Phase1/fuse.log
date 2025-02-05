@@ -1,0 +1,94 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Projects/Phase1/testbench_isim_beh.exe -prj C:/Projects/Phase1/testbench_beh.prj work.testbench 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Projects/Phase1/mypackage.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Mux.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/FlopRs.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Decoder.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Sign_extension.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Shifter.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/RegisterFile.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 138: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 139: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 140: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 141: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 142: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 143: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 144: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 145: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 146: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 147: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 148: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 149: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 150: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 151: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 152: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 153: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 154: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 155: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 156: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 157: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 158: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 159: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 160: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 161: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 162: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 163: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 164: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 165: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 166: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 167: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 168: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/RegisterFile.vhd" Line 169: Actual for formal port regwrite is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Projects/Phase1/MUX2x1.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/maindecoder.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/alucontrol.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/ALU.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Adder.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/Datapath.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Projects/Phase1/Datapath.vhd" Line 110: Actual for formal port s is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Projects/Phase1/Controller.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/MIPS.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/imem.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/dmem.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/top.vhd" into library work
+Parsing VHDL file "C:/Projects/Phase1/testTop.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package mypackage
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Mux2x1 [\Mux2x1(5)\]
+Compiling architecture behavioral of entity Decoder [\Decoder(5)\]
+Compiling architecture behavioral of entity flopr [\flopr(32)\]
+Compiling architecture behavioral of entity Mux [\Mux(32)\]
+Compiling architecture behavioral of entity RegisterFile [\RegisterFile(32)\]
+Compiling architecture behavioral of entity Sign_extension [\Sign_extension(16,32)\]
+Compiling architecture behavioral of entity Mux2x1 [\Mux2x1(32)\]
+Compiling architecture behavioral of entity ALU [\ALU(32)\]
+Compiling architecture behavioral of entity Adder [\Adder(32)\]
+Compiling architecture behavioral of entity Shifter [\Shifter(26,28,2)\]
+Compiling architecture behavioral of entity Shifter [\Shifter(32,32,2)\]
+Compiling architecture behavioral of entity Datapath [\Datapath(32)\]
+Compiling architecture behavioral of entity MAINDECODER [maindecoder_default]
+Compiling architecture behavioral of entity alucontrol2 [alucontrol2_default]
+Compiling architecture behavioral of entity Controller [controller_default]
+Compiling architecture behavioral of entity MIPS [\MIPS(32)\]
+Compiling architecture behavioral of entity imem [imem_default]
+Compiling architecture behavioral of entity dmem [dmem_default]
+Compiling architecture behavioral of entity top [\top(32)\]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 25 sub-compilation(s) to finish...
+Compiled 48 VHDL Units
+Built simulation executable C:/Projects/Phase1/testbench_isim_beh.exe
+Fuse Memory Usage: 37384 KB
+Fuse CPU Usage: 686 ms

@@ -1,0 +1,163 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Projects/Phase1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Projects/Phase1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: testbench.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Projects\Phase1\mypackage.vhd" into library work
+Parsing package <mypackage>.
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\mypackage.vhd" Line 194. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "C:\Projects\Phase1\mypackage.vhd" Line 201. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing VHDL file "C:\Projects\Phase1\Mux.vhd" into library work
+Parsing entity <Mux>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\Projects\Phase1\FlopRs.vhd" into library work
+Parsing entity <flopr>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "C:\Projects\Phase1\Decoder.vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "C:\Projects\Phase1\Sign_extension.vhd" into library work
+Parsing entity <Sign_extension>.
+Parsing architecture <Behavioral> of entity <sign_extension>.
+Parsing VHDL file "C:\Projects\Phase1\Shifter.vhd" into library work
+Parsing entity <Shifter>.
+Parsing architecture <Behavioral> of entity <shifter>.
+Parsing VHDL file "C:\Projects\Phase1\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 138: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 139: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 140: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 141: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 142: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 143: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 144: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 145: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 146: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 147: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 148: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 149: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 150: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 151: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 152: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 153: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 154: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 155: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 156: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 157: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 158: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 159: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 160: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 161: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 162: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 163: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 164: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 165: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 166: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 167: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 168: Actual for formal port regwrite is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\RegisterFile.vhd" Line 169: Actual for formal port regwrite is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Projects\Phase1\MUX2x1.vhd" into library work
+Parsing entity <Mux2x1>.
+Parsing architecture <Behavioral> of entity <mux2x1>.
+Parsing VHDL file "C:\Projects\Phase1\maindecoder.vhd" into library work
+Parsing entity <MAINDECODER>.
+Parsing architecture <Behavioral> of entity <maindecoder>.
+Parsing VHDL file "C:\Projects\Phase1\alucontrol.vhd" into library work
+Parsing entity <alucontrol2>.
+Parsing architecture <Behavioral> of entity <alucontrol2>.
+Parsing VHDL file "C:\Projects\Phase1\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Projects\Phase1\Adder.vhd" into library work
+Parsing entity <Adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\Projects\Phase1\Datapath.vhd" into library work
+Parsing entity <Datapath>.
+Parsing architecture <Behavioral> of entity <datapath>.
+WARNING:HDLCompiler:946 - "C:\Projects\Phase1\Datapath.vhd" Line 110: Actual for formal port s is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Projects\Phase1\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+Parsing VHDL file "C:\Projects\Phase1\MIPS.vhd" into library work
+Parsing entity <MIPS>.
+Parsing architecture <Behavioral> of entity <mips>.
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 59: Formal port pc of mode buffer cannot be associated with actual port pc of mode out
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 66: Formal port aluout of mode buffer cannot be associated with actual port aluout of mode out
+WARNING:HDLCompiler:439 - "C:\Projects\Phase1\MIPS.vhd" Line 67: Formal port writedata of mode buffer cannot be associated with actual port writedata of mode out
+Parsing VHDL file "C:\Projects\Phase1\imem.vhd" into library work
+Parsing entity <imem>.
+Parsing architecture <Behavioral> of entity <imem>.
+Parsing VHDL file "C:\Projects\Phase1\dmem.vhd" into library work
+Parsing entity <dmem>.
+Parsing architecture <Behavioral> of entity <dmem>.
+Parsing VHDL file "C:\Projects\Phase1\top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+Parsing VHDL file "C:\Projects\Phase1\test.vhd" into library work
+Parsing entity <testbench2>.
+Parsing architecture <test> of entity <testbench>.
+ERROR:HDLCompiler:374 - "C:\Projects\Phase1\test.vhd" Line 10: Entity <testbench> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 12: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 13: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 14: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 16: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 17: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 21: <clk> is not declared.
+ERROR:HDLCompiler:192 - "C:\Projects\Phase1\test.vhd" Line 21: Actual of formal out port writedata cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 25: <clk> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 26: <ns> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 27: <clk> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 28: <ns> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 33: <reset> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 34: <ns> is not declared.
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 35: <reset> is not declared.
+ERROR:HDLCompiler:631 - "C:\Projects\Phase1\test.vhd" Line 43: Near string "NO ERRORS: Simulation succeeded" ; 0 visible types match here
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 43: <failure> is not declared.
+ERROR:HDLCompiler:631 - "C:\Projects\Phase1\test.vhd" Line 45: Near string "Simulation failed" ; 0 visible types match here
+ERROR:HDLCompiler:69 - "C:\Projects\Phase1\test.vhd" Line 45: <failure> is not declared.
+Sorry, too many errors..
+--> 
+
+Total memory usage is 215440 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
